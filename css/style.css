@@ -1,0 +1,27 @@
+/* Variables */
+:root{
+    /* --name: value */
+    --main-text-color: #fff;
+    --main-font-family: "Montserrat", sans-serif;
+    --main-font-weight: 400;
+    --main-font-size: 16px;
+}
+/* Container */
+.container {
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Same codes */
+
+/* Html and Body */
+html,
+body{
+    background-color: var(--bg-color);
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    font-weight: var(--main-font-weight);
+    color: var(--main-text-color);
+    line-height: 1;
+}
+/* Sections */
