@@ -229,3 +229,33 @@ body{
     right: 0;
     text-decoration: none;
 }
+
+/* Free Shipping */
+.free-shipping {
+    width: 100%;
+    background-color: #212121;
+    padding: 80px 0px 69px 0px;
+}
+.free-shipping__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.free-shipping__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(36.57 / 30 * 100%);
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin: 0px 0px 23px 0px;
+}
+.free-shipping__roboto{
+    font-family: Roboto, san-serif;
+}
+.free-shipping__text {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: calc(25.6 / 21 * 100%);
+    color: #fff;
+}
