@@ -50,6 +50,7 @@ body{
     text-decoration: none;
     color: #212121;
     transition: all 0.2s ease-in-out;
+    position: relative;
 }
 .header__drop-link:hover{
     color: #D7B399;
@@ -57,6 +58,20 @@ body{
 .header__drop-link:active{
     color: #D7B399;
     opacity: 0.8;
+}
+.header__drop-link::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-22%);
+    border-top: 5px solid #212121;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
 }
 .header__logo {
     display: flex;
@@ -119,4 +134,29 @@ body{
     opacity: 0.6;
 }
 .header__cart-info {
+    width: 33px;
+    height: 15px;
+    background-color: #D7B399;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(14 / 12 * 100%);
+    letter-spacing: 0.03em;
+    color: #fff;
+    position: relative;
+}
+.header__cart-info::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border-right: 10px solid #D7B399;
+    border-top: 8px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -17px;
 }
